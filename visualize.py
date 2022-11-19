@@ -11,7 +11,7 @@ with open('vars/stoi.dat', 'rb') as f:
 
 
 plt.figure(figsize=(16,16))
-plt.imshow(freqs, cmap='Blues')
+plt.imshow(freqs, cmap='Blues', aspect='auto')
 for i in range(27):
     for j in range(27):
         chstr = itos[i] + itos[j]

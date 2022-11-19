@@ -1,8 +1,12 @@
 import torch
 import pickle5 as pickle
+import sys
 
 # load names (from cli)
-names = open('names.txt', 'r').read().splitlines()
+if len(sys.argv) == 2:
+    names = open(str(sys.argv[1]), 'r').read().splitlines()
+else:
+    names = open('names.txt', 'r').read().splitlines()
 names[:] = (n.lower() for n in names)
 
 # string to int map (stoi)
