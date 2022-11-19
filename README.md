@@ -1,4 +1,8 @@
 Implementing a character level bigram language model
+## Requirements
+* Pytorch
+* Matplotlib
+* pickle5
 
 ## Training
 use train.py to train the model on a list of names.
