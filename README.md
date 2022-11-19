@@ -23,3 +23,9 @@ The trained model is called by default but can be specified as well. Usage for u
 ```
 $python main.py 5 untrained
 ```
+
+## Visualizer
+Use visualizer to get a nice image that shows all the bigrams and their frequencies.
+```
+$python visualizer.py
+```
